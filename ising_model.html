@@ -1,0 +1,63 @@
+<HTML>
+
+<! HTML header below
+<HEAD> 
+<TITLE> One Dimensional Ising Model solved using Motropolis Monte Carlo algirith </TITLE>
+
+</HEAD>
+
+
+<! HTML body below
+<BODY>
+
+<H1>  Ising Model in 1D solved using Metropolis Monte Carlo algorithm </H1>
+<H2> Omadillo Abdurazakov </H2>
+
+<hr>
+
+<p>
+ The thermodynamic properties of a one-dimensional Ising model is presented using Metropolis Monte Carlo algorithm. The system is made of N(20 and 100 in our case)randomly oriented spins in one dimension. The initial state of the system is produced by a random number generator, and the equlibriam condition is reached by flipping the spin of a random particle using Metropolis subroutine.  
+</p>
+
+
+<H2> Code </H2>
+
+The following code used to calculate important properties of the system such as its average energy, magnetization, and their standart errors. 
+
+
+<ol>
+<li><A HREF="metro_20.f90">code for 100 spin system</a>
+<li><A HREF="metro_100.f90">code for 20 spin system</a>
+</ol>
+
+
+<li> The energy, magnetization and thier standard errors are plotted as functions of temperature for 100 spins.<hr>
+
+<IMG SRC="100_e.png" ALIGN=CENTER ALT="[100-energy]">
+
+<IMG SRC="100_m.png" ALIGN=CENTER ALT="[100-mag]">
+
+<IMG SRC="100_er.png" ALIGN=CENTER ALT="[100-error]">
+
+<li> The energy, magnetization and thier standard errors are plotted as functions of temperature for 20 spins.<hr>
+
+<IMG SRC="20_e.png" ALIGN=CENTER ALT="[20-energy]">
+
+<IMG SRC="20_m.png" ALIGN=CENTER ALT="[20-mag]">
+
+<IMG SRC="20_er.png" ALIGN=CENTER ALT="[20-error]">
+</p>
+
+
+</ul>
+
+<H2> Discussion </H2>
+
+
+<ol>
+To equilibrate the system 10^4 steps and to measure 10^5 steps are used because the larger number of steps took very long time. From the energy versus temperature graphs it is seen that the numerical calculated energy curve is closer to the exact one when we have a larger number of spins. Also, the standard errors for the energy and magnetization decreases with increasing number of spins in the system.
+
+</ol>
+
+</BODY>
+</HTML>
